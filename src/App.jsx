@@ -151,7 +151,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Router basename="/ak">
+      <Router>
         <div className="App">
           <Navbar />
           <Routes>
