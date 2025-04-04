@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akanksha Rai</title>
+    <base href="/ak/" />
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <script type="module" crossorigin src="/ak/assets/index-e4dcef22.js"></script>
+    <link rel="modulepreload" crossorigin href="/ak/assets/vendor-6ea00779.js">
+    <link rel="modulepreload" crossorigin href="/ak/assets/mui-2ed32658.js">
+    <link rel="modulepreload" crossorigin href="/ak/assets/animations-bfc6aa70.js">
+    <link rel="stylesheet" href="/ak/assets/index-ab1b7fb6.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+  </body>
+</html>
