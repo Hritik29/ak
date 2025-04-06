@@ -148,6 +148,7 @@ const theme = createTheme({
 });
 
 function App() {
+  console.log('App component is rendering');
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
