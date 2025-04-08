@@ -29,69 +29,53 @@ const Services = () => {
 
   const services = [
     {
-      title: 'Content Writing Services',
-      description: 'Professional content writing services tailored to your brand voice and target audience.',
-      image: 'https://images.unsplash.com/photo-1519682577862-22b62b24e493?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+      title: 'Website & SEO Content Writing',
+      description: 'Strategic, keyword-focused website content and blog writing that ranks well and reads even better. Specializing in creating engaging content that drives organic traffic.',
+      image: '/src/assets/images/service1.jpg',
       features: [
-        'Blog Posts & Articles',
-        'Website Content',
-        'Product Descriptions',
-        'Social Media Content',
-        'Email Marketing Copy',
-        'Technical Writing',
-        'Creative Writing',
-        'SEO-Optimized Content'
+        'Website copywriting & optimization',
+        'SEO content strategy & creation',
+        'Blog writing & management',
+        'Keyword research & implementation'
       ],
-      price: 'Starting from $50',
+      price: 'Starting from $199',
       icon: <CreateIcon sx={{ fontSize: 40 }} />,
     },
     {
-      title: 'Digital Marketing Services',
-      description: 'Comprehensive digital marketing solutions to grow your online presence and reach.',
-      image: 'https://images.unsplash.com/photo-1557838923-2985c318be48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+      title: 'Academic & Research Writing',
+      description: 'Comprehensive academic content and research articles with a focus on medical and healthcare domains. Delivering well-researched, properly cited content.',
+      image: '/src/assets/images/service2.jpg',
       features: [
-        'Social Media Marketing',
-        'Email Marketing Campaigns',
-        'Content Strategy Development',
-        'Brand Development',
-        'Analytics & Reporting',
-        'Lead Generation',
-        'Customer Engagement',
-        'Market Research'
+        'Literature reviews & analysis',
+        'Research paper development',
+        'Academic article writing',
+        'Medical content expertise'
       ],
-      price: 'Starting from $100',
+      price: 'Starting from $99',
       icon: <TrendingUpIcon sx={{ fontSize: 40 }} />,
     },
     {
-      title: 'SEO Services',
-      description: 'Expert SEO services to improve your website\'s visibility and rankings.',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+      title: 'Copywriting & Brand Messaging',
+      description: 'Crafting compelling brand narratives and persuasive copy that resonates with your target audience. Strategic messaging that drives conversions.',
+      image: '/src/assets/images/service3.jpg',
       features: [
-        'Keyword Research',
-        'On-page SEO Optimization',
-        'Content Optimization',
-        'Link Building',
-        'Technical SEO',
-        'Local SEO',
-        'SEO Auditing',
-        'Performance Tracking'
+        'Brand story development',
+        'Product message crafting',
+        'Campaign copywriting',
+        'Brand voice guidelines'
       ],
-      price: 'Starting from $75',
+      price: 'Starting from $189',
       icon: <SearchIcon sx={{ fontSize: 40 }} />,
     },
     {
       title: 'Social Media Management',
-      description: 'Professional social media management to build and engage your audience.',
-      image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+      description: 'End-to-end social media management focused on growing engagement and building meaningful connections with your audience across platforms.',
+      image: '/src/assets/images/service4.jpg',
       features: [
-        'Content Calendar Creation',
-        'Platform Strategy',
-        'Community Management',
-        'Engagement Growth',
-        'Analytics Tracking',
-        'Crisis Management',
-        'Brand Voice Development',
-        'Social Media Advertising'
+        'Content strategy planning',
+        'Community engagement',
+        'Performance analytics',
+        'Campaign management'
       ],
       price: 'Starting from $150',
       icon: <LanguageIcon sx={{ fontSize: 40 }} />,
@@ -117,10 +101,10 @@ const Services = () => {
             transition={{ duration: 0.5 }}
           >
             <Typography variant="h2" align="center" gutterBottom>
-              My Services
+              Services I Offer
             </Typography>
             <Typography variant="h5" align="center" sx={{ opacity: 0.9 }}>
-              Professional Content Writing & Digital Marketing Solutions
+              Specialized Content Writing for Various Platforms and Industries
             </Typography>
           </motion.div>
         </Container>
@@ -235,7 +219,7 @@ const Services = () => {
             <Grid item xs={12} md={4}>
               <Box sx={{ textAlign: 'center' }}>
                 <Typography variant="h4" gutterBottom>
-                  5+ Years
+                  3+ Years
                 </Typography>
                 <Typography variant="subtitle1">
                   Professional Experience
@@ -245,7 +229,7 @@ const Services = () => {
             <Grid item xs={12} md={4}>
               <Box sx={{ textAlign: 'center' }}>
                 <Typography variant="h4" gutterBottom>
-                  100+
+                  75+
                 </Typography>
                 <Typography variant="subtitle1">
                   Successful Projects
@@ -255,7 +239,7 @@ const Services = () => {
             <Grid item xs={12} md={4}>
               <Box sx={{ textAlign: 'center' }}>
                 <Typography variant="h4" gutterBottom>
-                  50+
+                  30+
                 </Typography>
                 <Typography variant="subtitle1">
                   Happy Clients

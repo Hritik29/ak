@@ -127,23 +127,23 @@ const Home = () => {
 
   const featuredProjects = [
     {
-      title: 'E-commerce Content Strategy',
-      description: 'Developed comprehensive content strategy for an e-commerce platform, resulting in 150% increase in organic traffic.',
-      image: 'https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
-      tags: ['Content Strategy', 'SEO', 'E-commerce'],
+      title: 'Docty.ai (Healthcare Tech Website)',
+      description: 'Developed comprehensive content strategy for a Healthcare tech website, resulting in 150% increase in organic traffic.',
+      image: '/src/assets/images/docty.jpg',
+      tags: ['Content Strategy', 'SEO', 'Healthcare Domain'],
       link: '/projects',
     },
     {
-      title: 'Social Media Campaign',
-      description: 'Created and managed successful social media campaigns for multiple brands, achieving 200% engagement rate.',
-      image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
-      tags: ['Social Media', 'Digital Marketing', 'Campaign Management'],
+      title: 'Careers360 – Medicine Domain',
+      description: 'Academic content for Careers360 in the field of medicine and allied sciences, achieving 200% engagement rate.',
+      image: '/src/assets/images/career3600.jpg',
+      tags: ['Academic Writing', 'Research', 'Medical Content'],
       link: '/projects',
     },
     {
-      title: 'Blog Content Series',
-      description: 'Authored a series of educational blog posts that garnered over 100,000 views and established thought leadership.',
-      image: 'https://images.unsplash.com/photo-1519682577862-22b62b24e493?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+      title: 'Arka Informations – IT & B2B',  
+      description: 'Developed comprehensive content strategy for a IT & B2B website, resulting in 150% increase in organic traffic.',
+      image: '/src/assets/images/arka.jpg',
       tags: ['Content Writing', 'Blogging', 'Thought Leadership'],
       link: '/projects',
     },
@@ -173,27 +173,27 @@ const Home = () => {
   const latestBlogs = [
     {
       id: 1,
-      title: 'The Art of Content Writing',
-      content: 'Content writing is more than just putting words on paper. It\'s about crafting compelling narratives that resonate with your audience and drive meaningful engagement.',
+      title: 'What Is SEO Content Writing?',
+      content: 'If you\'ve ever wondered how some websites seem to magically show up on the front page of Google, here\'s the trick: it\'s not magic—it\'s SEO content writing.',
       author: 'Akanksha Rai',
-      date: '2024-03-15',
+      date: '2025-04-08',
       likes: 42,
       comments: 5,
       tags: ['Content Writing', 'Digital Marketing'],
-      image: 'https://images.unsplash.com/photo-1519682577862-22b62b24e493?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+      image: '/src/assets/images/seo.jpg',
       readTime: '5 min read',
     },
     {
       id: 2,
-      title: 'Digital Marketing Trends 2024',
-      content: 'As we move into 2024, several key trends are shaping the digital marketing landscape. From AI-powered content creation to immersive experiences.',
-      author: 'Akanksha Rai',
-      date: '2024-03-10',
+      title: "Website Content Writing vs. Copywriting",
+      content: "As we move into 2024, several key trends are shaping the digital marketing landscape. From AI-powered content creation to immersive experiences.",
+      author: "Akanksha Rai",
+      date: "2024-03-10",
       likes: 38,
       comments: 3,
-      tags: ['Digital Marketing', 'Trends'],
-      image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
-      readTime: '7 min read',
+      tags: ["Digital Marketing", "Trends"],
+      image: "/src/assets/images/arka.jpg",
+      readTime: "7 min read",
     },
     {
       id: 3,
@@ -204,7 +204,7 @@ const Home = () => {
       likes: 35,
       comments: 4,
       tags: ['SEO', 'Content Writing'],
-      image: 'https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+      image: '/src/assets/images/seo.jpg',
       readTime: '6 min read',
     },
   ];
@@ -260,11 +260,30 @@ const Home = () => {
                     color: 'white',
                     mb: 4,
                     opacity: 0.9,
+                    fontSize: '1.5rem',
+                    fontFamily: 'Cursive',
                   }}
                 >
-                  Professional content writing and digital marketing solutions to help your brand stand out
+                  Hi, I'm Akanksha Rai, a content writer who crafts compelling website content, insightful academic articles, and strategic brand copy for clients across industries. I turn ideas into content that connects, educates, and converts.
                 </Typography>
                 <Box sx={{ display: 'flex', gap: 2 }}>
+                  <Button
+                    component={RouterLink}
+                    to="/portfolio"
+                    variant="contained"
+                    color="secondary"
+                    size="large"
+                    startIcon={<WorkIcon />}
+                    sx={{
+                      px: 4,
+                      py: 1.5,
+                      borderRadius: 2,
+                      textTransform: 'none',
+                      fontSize: '1.1rem',
+                    }}
+                  >
+                    Explore My Work →
+                  </Button>
                   <Button
                     component={RouterLink}
                     to="/contact"
@@ -278,26 +297,13 @@ const Home = () => {
                       borderRadius: 2,
                       textTransform: 'none',
                       fontSize: '1.1rem',
+                      backgroundColor: 'rgba(29, 18, 24, 0.23)',
+                      '&:hover': {
+                        backgroundColor: 'rgba(32, 31, 32, 0.87)',
+                      },
                     }}
                   >
-                    Get in Touch
-                  </Button>
-                  <Button
-                    component={RouterLink}
-                    to="/portfolio"
-                    variant="outlined"
-                    color="inherit"
-                    size="large"
-                    sx={{
-                      px: 4,
-                      py: 1.5,
-                      borderRadius: 2,
-                      textTransform: 'none',
-                      fontSize: '1.1rem',
-                      backgroundColor: '#ccf2ff',
-                    }}
-                  >
-                    View Portfolio
+                    Get in Touch →
                   </Button>
                 </Box>
               </motion.div>
@@ -309,7 +315,7 @@ const Home = () => {
               >
                 <Box
                   component="img"
-                  src="/src/assets/Profile.jpeg"
+                  src="/src/assets/images/Profile.jpeg"
                   alt="Creative Writing"
                   loading="lazy"
                   sx={{
@@ -691,7 +697,7 @@ const Home = () => {
                       </Box>
                       <Button
                         component={RouterLink}
-                        to={`/blog/${blog.id}`}
+                        to={`/blog`}
                         variant="outlined"
                         color="primary"
                         size="small"
