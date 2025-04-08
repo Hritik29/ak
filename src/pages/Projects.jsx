@@ -28,80 +28,118 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-commerce Content Strategy',
-      description: 'Developed comprehensive content strategy for an e-commerce platform, resulting in 150% increase in organic traffic.',
-      shortDescription: 'E-commerce content strategy that drove 150% traffic growth',
-      image: 'https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
-      tags: ['Content Strategy', 'SEO', 'E-commerce'],
-      link: '#',
+      title: 'Docty.ai (Healthcare Tech Website)',
+      description: 'Wrote clean, informative, and user-centered content for their health tech platform, simplifying telehealth services for users across multiple demographics.',
+      shortDescription: 'Healthcare tech website content for Docty.ai',
+      image: '/src/assets/images/docty.jpg',
+      tags: ['Healthcare', 'Website Content', 'UX Writing'],
+      link: 'https://docty.ai/',
       details: {
-        challenge: 'The client needed a comprehensive content strategy to improve their online presence and drive more organic traffic.',
-        solution: 'Developed a multi-channel content strategy including blog posts, product descriptions, and social media content.',
+        challenge: 'The client needed clear, accessible content for a diverse user base.',
+        solution: 'Created user-centered content that simplified complex healthcare concepts.',
         results: [
-          '150% increase in organic traffic',
-          '85% improvement in conversion rate',
-          '200% growth in social media engagement'
+          'Improved user understanding of telehealth services',
+          'Enhanced user engagement with the platform',
+          'Increased conversion rates for key services'
         ],
-        technologies: ['Content Strategy', 'SEO', 'Social Media Marketing', 'Analytics']
+        technologies: ['UX Writing', 'Healthcare Content', 'Website Copywriting']
       }
     },
     {
       id: 2,
-      title: 'Social Media Campaign',
-      description: 'Created and managed successful social media campaigns for multiple brands, achieving 200% engagement rate.',
-      shortDescription: 'Social media campaigns with 200% engagement rate',
-      image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
-      tags: ['Social Media', 'Digital Marketing', 'Campaign Management'],
-      link: '#',
+      title: 'Careers360 – Medicine Domain',
+      description: 'Authored medically sound academic articles for aspiring healthcare professionals and students preparing for entrance exams in India.',
+      shortDescription: 'Academic content for healthcare professionals',
+      image: '/src/assets/images/career3600.jpg',
+      tags: ['Academic Writing', 'Healthcare', 'Education'],
+      link: 'https://medicine.careers360.com/',
       details: {
-        challenge: 'Multiple brands needed cohesive social media presence and engagement strategies.',
-        solution: 'Developed platform-specific content strategies and engagement tactics.',
+        challenge: 'Creating accurate, accessible medical content for students.',
+        solution: 'Developed comprehensive academic articles with clear explanations.',
         results: [
-          '200% increase in engagement rate',
-          '150% growth in follower base',
-          '300% improvement in brand mentions'
+          'High engagement with student audience',
+          'Positive feedback from medical professionals',
+          'Increased traffic to educational content'
         ],
-        technologies: ['Social Media Marketing', 'Content Creation', 'Community Management', 'Analytics']
+        technologies: ['Academic Writing', 'Medical Content', 'Educational Content']
       }
     },
     {
       id: 3,
-      title: 'Blog Content Series',
-      description: 'Authored a series of educational blog posts that garnered over 100,000 views and established thought leadership.',
-      shortDescription: 'Educational blog series with 100k+ views',
-      image: 'https://images.unsplash.com/photo-1519682577862-22b62b24e493?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
-      tags: ['Content Writing', 'Blogging', 'Thought Leadership'],
-      link: '#',
+      title: 'International SEO Projects via RankTech Solutions',
+      description: 'Worked with RankTech Solutions—a results-driven digital marketing agency in India—to create SEO-friendly blogs, website content, and metadata (titles/descriptions) for a global clientele. I always aligned content with the client\'s brand voice, industry goals, and search intent to boost organic traffic and engagement.',
+      shortDescription: 'International SEO content for global clients',
+      image: '/src/assets/images/seo.jpg',
+      tags: ['SEO', 'International Content', 'Digital Marketing'],
+      link: 'https://ranktechsolutions.com/',
       details: {
-        challenge: 'Client needed to establish authority in their industry through content.',
-        solution: 'Created comprehensive educational content series with expert insights.',
+        challenge: 'Creating SEO-optimized content for diverse industries and audiences.',
+        solution: 'Developed targeted content strategies aligned with client goals.',
         results: [
-          '100,000+ monthly views',
-          '45% increase in time on site',
-          '60% growth in newsletter subscriptions'
+          'Improved search rankings for target keywords',
+          'Increased organic traffic for clients',
+          'Enhanced brand visibility across platforms'
         ],
-        technologies: ['Content Writing', 'SEO', 'Email Marketing', 'Analytics']
+        technologies: ['SEO Writing', 'Content Strategy', 'International Marketing']
       }
     },
     {
       id: 4,
-      title: 'Email Marketing Campaign',
-      description: 'Designed and executed email marketing campaigns that achieved 45% open rate and 12% click-through rate.',
-      shortDescription: 'Email campaigns with 45% open rate',
-      image: 'https://images.unsplash.com/photo-1557838923-2985c318be48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
-      tags: ['Email Marketing', 'Campaign Design', 'Analytics'],
-      link: '#',
+      title: 'Arka Informations (Tech Website)',
+      description: 'Delivered SEO-optimized website content for a B2B IT service provider, highlighting service offerings and boosting engagement.',
+      shortDescription: 'B2B tech website content',
+      image: '/src/assets/images/arka.jpg',
+      tags: ['B2B', 'Tech Content', 'Website Copywriting'],
+      link: 'https://arkainformations.com/',
       details: {
-        challenge: 'Client needed to improve email marketing performance and engagement.',
-        solution: 'Developed personalized email campaigns with A/B testing.',
+        challenge: 'Creating compelling B2B content for technical services.',
+        solution: 'Developed clear, value-focused content highlighting service benefits.',
         results: [
-          '45% email open rate',
-          '12% click-through rate',
-          '25% increase in conversions'
+          'Improved website engagement metrics',
+          'Enhanced service understanding for potential clients',
+          'Increased conversion rates for key services'
         ],
-        technologies: ['Email Marketing', 'A/B Testing', 'Analytics', 'Automation']
+        technologies: ['B2B Writing', 'Tech Content', 'Website Copywriting']
       }
     },
+    {
+      id: 5,
+      title: 'Directed Short Film – Goonj',
+      description: 'I directed and wrote the script and dialogues for Goonj, a short film that explores [insert theme if you\'d like]. This project allowed me to bring together narrative, emotion, and visual storytelling from scratch—right from ideation to execution.',
+      shortDescription: 'Short film direction and scriptwriting',
+      image: '/src/assets/images/goonj.jpg',
+      tags: ['Film Direction', 'Scriptwriting', 'Visual Storytelling'],
+      link: '#',
+      details: {
+        challenge: 'Creating a compelling narrative through visual storytelling.',
+        solution: 'Developed a complete film from concept to execution.',
+        results: [
+          'Successful film production and screening',
+          'Positive audience reception',
+          'Recognition for storytelling excellence'
+        ],
+        technologies: ['Film Direction', 'Scriptwriting', 'Visual Storytelling']
+      }
+    },
+    {
+      id: 6,
+      title: 'Anchor & Scriptwriter – Abhi Tak News',
+      description: 'I worked as an on-screen anchor for Abhi Tak News, delivering news bulletins, piece-to-camera segments, and special features. I also wrote original scripts for each segment, ensuring clear messaging and audience engagement.',
+      shortDescription: 'News anchoring and scriptwriting',
+      image: '/src/assets/images/abhitak.jpg',
+      tags: ['Broadcast Journalism', 'Scriptwriting', 'On-Camera Performance'],
+      link: '#',
+      details: {
+        challenge: 'Creating engaging news content for diverse audiences.',
+        solution: 'Developed clear, informative scripts and delivered them effectively.',
+        results: [
+          'Increased viewer engagement',
+          'Positive audience feedback',
+          'Enhanced news presentation quality'
+        ],
+        technologies: ['Broadcast Journalism', 'Scriptwriting', 'On-Camera Performance']
+      }
+    }
   ];
 
   const handleOpen = (project) => {
@@ -119,10 +157,11 @@ const Projects = () => {
       {/* Hero Section */}
       <Box
         sx={{
-          background: 'linear-gradient(135deg, #1a237e 0%, #0d47a1 100%)',
-          color: 'white',
+          background: 'linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%)',
+          color: '#FFFFFF',
           py: 8,
           mb: 6,
+          boxShadow: '0 4px 20px rgba(30, 58, 138, 0.1)',
         }}
       >
         <Container maxWidth="lg">
@@ -132,10 +171,10 @@ const Projects = () => {
             transition={{ duration: 0.5 }}
           >
             <Typography variant="h2" align="center" gutterBottom>
-              My Projects
+              📂 Featured Work
             </Typography>
             <Typography variant="h5" align="center" sx={{ opacity: 0.9 }}>
-              A collection of successful projects and campaigns
+              A showcase of my content writing and creative projects
             </Typography>
           </motion.div>
         </Container>

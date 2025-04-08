@@ -148,11 +148,10 @@ const theme = createTheme({
 });
 
 function App() {
-  console.log('App component is rendering');
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Router>
+      <Router basename="/ak">
         <div className="App">
           <Navbar />
           <Routes>

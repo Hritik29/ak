@@ -27,31 +27,49 @@ const About = () => {
 
   const education = [
     {
-      degree: 'Master of Arts in Creative Writing',
-      school: 'University of Creative Arts',
-      period: '2018 - 2020',
-      description: 'Specialized in digital content creation and storytelling',
+      degree: 'B.A Journalism & Mass Communication,',
+      school: 'Lovely Professional University, Jalandhar',
+      period: '2021 - 2024',
+      description: 'Focus on modern anchoring, content writing, digital marketing, and social media marketing. Written news articles for the university magazine and also worked on the website content for the same.',
     },
     {
-      degree: 'Bachelor of Arts in English Literature',
-      school: 'University of Arts',
-      period: '2014 - 2018',
-      description: 'Focus on modern literature and digital communication',
+      degree: 'Higher Secondary Education',
+      school: 'DAVV School, Gorakhpur',
+      period: '2019 - 2021',
+      description: 'Focus on modern literature, digital communication, and art of anchoring.',
+    },
+    {
+      degree: 'Secondary Education',
+      school: 'DAVV School, Gorakhpur',
+      period: '2017 - 2019',
+      description: 'Science Stream with Physics, Chemistry, and Mathematics.',
     },
   ];
 
   const experience = [
     {
-      title: 'Senior Content Strategist',
-      company: 'Digital Marketing Agency',
-      period: '2021 - Present',
-      description: 'Leading content strategy and creation for multiple clients',
+      title: 'Senior Content Writer',
+      company: 'Techecy Consultancy and Solutions Pvt Ltd · Full-time',
+      period: 'Jan 2025 - Present',
+      description: 'Leading content strategy and creation for multiple clients, Engaging content created for internation client for the website and social media platforms.',  
     },
     {
-      title: 'Content Writer',
-      company: 'Tech Blog',
-      period: '2019 - 2021',
-      description: 'Created engaging content for technology and digital marketing topics',
+      title: 'Senior Content Writer',
+      company: 'Arka Informations Private Limited · Full-time',
+      period: 'Sept 2024 - Jan 2025',
+      description: 'Created engaging content for technology and digital marketing topics, and also worked on the website content for the same. The content was related to health care and medical domain.',
+    },
+    {
+      title: 'Digital Content Writer',
+      company: 'RankTech Solutions Private Limited · Full-time',
+      period: 'Feb 2024 - Aug2024',
+      description: 'This was a full time job where I was responsible for creating content for the website and social media platforms. The content was related to the technology and digital marketing topics.',
+    },
+    {
+      title: 'Digital Writing Intern',
+      company: 'Careers360 · Internship',
+      period: 'Sep 2023 - Feb 2024',
+      description: 'Academic content for Careers360 in the field of medicine and allied sciences. The content was related to the medical entrance exams and the latest news in the medical field.',
     },
   ];
 
@@ -123,14 +141,17 @@ const About = () => {
               >
                 <Avatar
                   sx={{
-                    width: 200,
-                    height: 200,
+                    width: 350,
+                    height: 250,
+                    marginRight: 300,
                     margin: '0 auto',
                     border: '4px solid white',
                     boxShadow: '0 4px 20px rgba(0,0,0,0.2)',
+                    borderRadius: '8px',
                   }}
-                  src="/src/assets/Profile.jpeg"
+                  src="/src/assets/images/Aboutme.jpg"
                   alt="Profile"
+                  loading="lazy"
                 />
               </motion.div>
             </Grid>
@@ -144,10 +165,16 @@ const About = () => {
                   About Me
                 </Typography>
                 <Typography variant="h5" sx={{ mb: 3, opacity: 0.9 }}>
-                  Professional Content Writer & Digital Marketing Strategist
+                  Content Writer & Brand Storyteller
                 </Typography>
                 <Typography variant="body1" paragraph sx={{ fontSize: '1.1rem', opacity: 0.9 }}>
-                  With over 5 years of experience in content writing and digital marketing, I specialize in creating engaging, SEO-optimized content that helps businesses connect with their audience and achieve their goals. My passion for storytelling and deep understanding of digital marketing strategies allows me to deliver content that not only resonates with readers but also drives measurable results.
+                  I'm a passionate and versatile content writer with experience in creating impactful content for brands, businesses, and academic platforms. Whether it's simplifying medical jargon for student readers or writing website copy that converts clicks into customers, I understand how to tailor words to purpose and platform.
+                </Typography>
+                <Typography variant="body1" paragraph sx={{ fontSize: '1.1rem', opacity: 0.9 }}>
+                  With a background in writing for both Indian and international clients, I've had the opportunity to work on website projects, academic writing for medicine and education domains, and creative brand messaging. My focus is always on clarity, value, and voice.
+                </Typography>
+                <Typography variant="body1" paragraph sx={{ fontSize: '1.1rem', opacity: 0.9, fontStyle: 'italic' }}>
+                  Let's just say I don't write to fill space. I write to make space for action.
                 </Typography>
               </motion.div>
             </Grid>

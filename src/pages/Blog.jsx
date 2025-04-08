@@ -65,6 +65,7 @@ import { GoogleAuthProvider } from 'firebase/auth';
 import GoogleIcon from '@mui/icons-material/Google';
 import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase';
+import ReadMoreIcon from '@mui/icons-material/ReadMore';
 
 const Blog = () => {
   const theme = useTheme();
@@ -76,44 +77,174 @@ const Blog = () => {
   const [blogs, setBlogs] = useState([
     {
       id: 1,
-      title: 'The Art of Content Writing',
-      content: 'Content writing is more than just putting words on paper. It\'s about crafting compelling narratives that resonate with your audience and drive meaningful engagement. In this comprehensive guide, we\'ll explore the key elements of effective content writing and how to master them.',
-      fullContent: `Content writing is more than just putting words on paper. It's about crafting compelling narratives that resonate with your audience and drive meaningful engagement. In this comprehensive guide, we'll explore the key elements of effective content writing and how to master them.
+      title: 'What Is SEO Content Writing? A Beginner-Friendly Guide to Ranking with Words',
+      content: 'If you\'ve ever wondered how some websites seem to magically show up on the front page of Google, here\'s the trick: it\'s not magic—it\'s SEO content writing.',
+      fullContent: `Introduction: Why SEO Content Writing Matters
+If you've ever wondered how some websites seem to magically show up on the front page of Google, here's the trick: it's not magic—it's SEO content writing.
+As a content writer, I've seen how businesses often struggle to strike the balance between what Google wants and what readers love. That's exactly where SEO content writing comes into play. It's more than just stuffing keywords into paragraphs; it's about writing purposeful content that ranks and resonates.
+So, let's break it all down.
 
-Key Elements of Effective Content Writing:
 
-1. Understanding Your Audience
-Before you start writing, it's crucial to understand who your audience is. What are their pain points? What solutions are they looking for? What tone and style resonate with them?
+What is SEO Content Writing?
+SEO content writing refers to the act of producing content that is both search engine-friendly and good for readers. It entails applying suitable keywords, layout, organization, and tactics to make the content rank higher on search engine result pages (SERPs).
+But here's the catch: wonderful SEO content isn't merely about ranking—it's about providing value.
 
-2. Research and Planning
-Good content is well-researched and carefully planned. This includes:
-- Gathering relevant information
-- Creating an outline
-- Identifying key points to cover
-- Planning the structure
 
-3. Writing Style
-Your writing style should be:
-- Clear and concise
-- Engaging and conversational
-- Free of jargon (unless your audience expects it)
-- Consistent with your brand voice
+Key Elements of SEO Content Writing
+Keyword Research
+ Every strong SEO article begins with understanding what people are searching for. Keywords are the bridge between your content and your audience.
 
-4. SEO Optimization
-While writing for humans is primary, don't forget SEO:
-- Use relevant keywords naturally
-- Structure content with proper headings
-- Include meta descriptions
-- Optimize for readability
 
-5. Editing and Proofreading
-The final step is crucial:
-- Review for clarity and flow
-- Check for grammar and spelling
-- Ensure consistency
-- Polish the final draft
+Use tools like Ubersuggest, SEMrush, or Google Keyword Planner.
 
-Remember, great content writing is a skill that develops with practice. Keep writing, keep learning, and keep improving.`,
+
+Focus on primary, secondary, and long-tail keywords.
+
+
+Pay attention to search intent—are they looking to learn, buy, or compare?
+
+
+Headline Optimization
+ Your title should grab attention and include the main keyword. A great title can increase click-through rates dramatically.
+
+ Example:
+ How to Write SEO Content That Ranks in 2024
+ Writing Tips for Beginners
+
+
+Meta Title & Meta Description
+ This is what shows up on search engines. It must be enticing, relevant, and keyword-rich.
+
+ Tip: Keep meta titles under 60 characters and meta descriptions under 160.
+
+
+Content Structure
+ Organize your content with:
+
+
+Clear H1, H2, H3 headings
+
+
+Short paragraphs
+
+
+Bullet points and numbered lists
+
+
+Internal and external links
+
+
+On-Page Optimization
+ This includes using keywords naturally throughout:
+
+
+In the introduction and conclusion
+
+
+In headers and subheaders
+
+
+In image alt texts
+
+
+In URLs (if applicable)
+
+
+Content Quality
+ Google's algorithm now heavily favors helpful, high-quality, and original content. So yes, quality beats keyword count.
+
+
+Internal & External Linking
+ Link to other relevant blog posts or service pages on your site (internal), and to authoritative sources like HubSpot, Forbes, or Moz (external).
+
+
+
+
+🛠 Tools I Use for SEO Writing
+SurferSEO – To analyze content scores and keyword density
+
+
+Grammarly – For grammar and tone checks
+
+
+Yoast SEO – If using WordPress
+
+
+Answer the Public – To find real questions your audience is asking
+
+
+
+Common Myths About SEO Writing
+"More keywords = better rankings"
+ Nope. Google penalizes keyword stuffing. Prioritize clarity and flow.
+
+
+"Only long-form content ranks."
+ While long-form content does perform well, it's the depth and usefulness that matter most.
+
+
+"I need to be technical to write SEO content."
+ Not true. If you understand your audience and learn SEO basics, you're already on your way.
+
+
+
+ Why SEO Content Writing Works for Businesses
+When done right, SEO content writing helps:
+Boost organic traffic
+
+
+Build trust and authority
+
+
+Reduce paid ad dependency
+
+
+Improve conversions by targeting the right audience
+
+
+Imagine a blog post that keeps working for you 24/7, attracting traffic without spending on ads. That's the beauty of good SEO writing.
+
+ My Approach to SEO Content Writing
+Here's how I approach every project as a content writer:
+Understand the brand voice & target audience
+
+
+Perform keyword & competitor research
+
+
+Create a smart outline based on search intent
+
+
+Write content with a human touch but SEO in mind
+
+
+Optimize headings, images, metadata, and links
+
+
+Deliver value—because helpful content always wins
+
+
+
+Real Results from SEO Content
+In my work with international clients (especially through RankTech Solutions), I've helped websites:
+Improve their Google rankings within 3-4 weeks
+
+
+Increase organic traffic by up to 40%
+
+
+Boost engagement rates and reduce bounce rates
+
+
+Why? Because we focused on relevant, well-written, and SEO-optimized content.
+
+Conclusion: Write for People, Optimize for Search
+At its core, SEO content writing is about creating content that helps people and satisfies algorithms. When those two meet, your content gets discovered, read, and trusted.
+If you're a business looking to grow online or a fellow writer looking to break into SEO, mastering this skill is a game-changer.
+
+Bonus Tip:
+Always write with empathy.
+Google may decide your rank, but people decide your value.`,
       author: 'Akanksha Rai',
       date: '2024-03-15',
       likes: 42,
@@ -139,43 +270,214 @@ Remember, great content writing is a skill that develops with practice. Keep wri
     },
     {
       id: 2,
-      title: 'Digital Marketing Trends 2024',
-      content: 'As we move into 2024, several key trends are shaping the digital marketing landscape. From AI-powered content creation to immersive experiences, let\'s explore what\'s next in digital marketing.',
-      fullContent: `As we move into 2024, several key trends are shaping the digital marketing landscape. From AI-powered content creation to immersive experiences, let's explore what's next in digital marketing.
+      title: 'Website Content Writing vs. Copywriting: What\'s the Real Difference?',
+      content: 'If you\'re a business owner or marketer looking to grow your brand online, chances are you\'ve come across terms like website content writing and copywriting. And if you\'re a little confused about the difference, you\'re not alone.',
+      fullContent: `Website Content Writing vs. Copywriting: What's the Real Difference?
+If you're a business owner or marketer looking to grow your brand online, chances are you've come across terms like website content writing and copywriting. And if you're a little confused about the difference, you're not alone.
+Both play a crucial role in your online presence, but they serve different purposes—and knowing the difference can save you time, money, and help you hire the right expert for your goals.
+Let's dive into a side-by-side comparison of Website Content Writing vs. Copywriting, so you can understand what each entails and when to use them.
 
-Top Digital Marketing Trends for 2024:
+What Is Website Content Writing?
+Website content writing is the art of creating informational, educational, or engaging content that provides value to your visitors. The goal isn't always to sell immediately—it's to build trust, authority, and a relationship with your audience.
+Think of it as your digital conversation starter.
+Examples of Website Content Writing:
+Homepage content
 
-1. AI and Machine Learning
-- Personalized content recommendations
-- Automated content creation
-- Predictive analytics
-- Chatbot advancements
 
-2. Video Marketing
-- Short-form video content
-- Live streaming
-- Interactive video experiences
-- Video SEO optimization
+About Us pages
 
-3. Voice Search Optimization
-- Voice-friendly content
-- Local SEO focus
-- Natural language processing
-- Featured snippets optimization
 
-4. Social Commerce
-- Shoppable posts
-- Social media marketplaces
-- Influencer partnerships
-- User-generated content
+Blog posts and articles
 
-5. Sustainability Marketing
-- Eco-friendly messaging
-- Green initiatives
-- Sustainable practices
-- Environmental impact focus
 
-These trends are reshaping how brands connect with their audiences and deliver value. Stay ahead by incorporating these strategies into your marketing plan.`,
+Service pages
+
+
+FAQs
+
+
+Case studies
+
+
+Whitepapers
+
+
+
+Primary Goals of Content Writing:
+Inform and educate the reader
+
+
+Improve SEO and organic visibility
+
+
+Showcase brand authority
+
+
+Answer user questions
+
+
+Provide long-term value
+
+
+This type of writing is typically longer-form, rich in keywords, and structured to guide readers through your business and offerings at a comfortable pace.
+
+What Is Copywriting?
+Copywriting, on the other hand, is more like your digital salesperson. It's focused on persuasion, emotional triggers, and conversions. The goal is to get readers to take a specific action—buy, subscribe, sign up, click, or call.
+It's concise, punchy, and strategic.
+Examples of Copywriting:
+Ad headlines and taglines
+
+
+Product descriptions
+
+
+Sales pages
+
+
+Email campaigns
+
+
+Landing pages
+
+
+Call-to-action (CTA) buttons
+
+
+Social media ads
+
+
+
+Primary Goals of Copywriting:
+Convert traffic into leads or sales
+
+
+Persuade readers to act
+
+
+Evoke emotions
+
+
+Communicate value quickly
+
+
+Boost marketing ROI
+
+
+Good copywriting doesn't just describe—it sells. It's the voice you use when you want to move the needle on your goals.
+
+Side-by-Side Comparison
+Feature
+Website Content Writing
+Copywriting
+Purpose
+Educate, inform, engage
+Persuade, sell, convert
+Tone
+Informative, neutral, helpful
+Persuasive, emotive, direct
+Length
+Long-form (500–1500+ words)
+Short-form (few words to a page)
+Focus
+SEO, brand voice, user experience
+Emotional triggers, benefits
+Examples
+Blog posts, web pages, guides
+Ads, CTAs, landing pages
+SEO Importance
+High
+Moderate
+Main Objective
+Build trust and visibility
+Drive immediate action
+
+
+When to Use Website Content Writing
+Use content writing when your goal is to educate your audience, improve search rankings, and establish credibility. For example:
+You're a B2B SaaS brand creating blog content to help customers solve pain points.
+
+
+You want your "About Us" page to share your story authentically.
+
+
+You're targeting organic traffic through long-tail keywords.
+
+
+You're building topic clusters to dominate in search results.
+
+
+This type of writing also has a longer shelf life—good content can continue driving traffic and value for years after it's published.
+
+When to Use Copywriting
+Use copywriting when your goal is to get immediate results or boost conversions. For instance:
+You're running a paid Facebook or Google Ads campaign.
+
+
+You want users to sign up for your newsletter or free trial.
+
+
+You're launching a product and need high-converting sales copy.
+
+
+You're writing email sequences to re-engage leads.
+
+
+Copywriting is about making readers say: "Yes! I want this now."
+
+Why the Confusion?
+Here's the tricky part: sometimes, content writing includes copywriting and vice versa.
+For example, a blog post may end with a call-to-action (CTA) asking readers to subscribe or download something. That CTA is copywriting inserted into a content piece. Similarly, a product page may include both informational content and sales copy.
+This overlap is why many people blur the lines. But understanding the intent behind the words makes all the difference.
+
+
+How to Hire the Right Writer for the Job
+If you're looking to hire a writer, be clear on the following:
+What's the goal of your content?
+ Inform or sell?
+
+
+Where will it be used?
+ Blogs, service pages, or ads?
+
+
+What's the tone of your brand?
+ Friendly? Authoritative? Playful?
+
+
+Do you need SEO included?
+ Not all copywriters offer keyword-optimized content.
+
+
+Here's a quick cheat sheet:
+You Need a Writer For…
+Hire a…
+Long-form blogs with SEO
+                        Content Writer
+Homepage or sales page with CTAs
+                        Copywriter
+Product descriptions for e-commerce
+                        Copywriter
+Informational guides and whitepapers
+                        Content Writer
+Social media ad text
+                        Copywriter
+Service pages with keyword focus
+                        Content Writer (with                          copywriting skills)
+
+
+Final Thoughts: Do You Need Both?
+Short answer? Yes.
+To truly win online, your brand needs both content and copy. Think of it this way:
+Content brings people in.
+
+
+Copy makes them stay—and buy.
+
+
+Together, they build a powerful digital ecosystem that nurtures, educates, and converts your audience across multiple touchpoints.
+So the next time you're thinking, "Do I need content writing or copywriting?", ask yourself:
+"Do I want to build trust or drive action right now?"
+And if you want both (which most brands do), get yourself a content writer who knows copywriting too`,
       author: 'Akanksha Rai',
       date: '2024-03-10',
       likes: 38,
@@ -310,6 +612,14 @@ Remember, SEO is about helping both search engines and users find your content. 
   const handleShare = (blog) => {
     // Implement sharing functionality
     console.log('Sharing blog:', blog.title);
+  };
+
+  const handleReadMore = (blog) => {
+    setSelectedBlog(blog);
+  };
+
+  const handleCloseBlogDetail = () => {
+    setSelectedBlog(null);
   };
 
   const handleTabChange = (event, newValue) => {
@@ -739,6 +1049,14 @@ Remember, SEO is about helping both search engines and users find your content. 
                               </Typography>
                             </IconButton>
                           </Tooltip>
+                          <Button 
+                            variant="outlined" 
+                            color="primary"
+                            onClick={() => handleReadMore(blog)}
+                            startIcon={<ReadMoreIcon />}
+                          >
+                            Read More
+                          </Button>
                         </Box>
                         <Box sx={{ display: 'flex', gap: 1 }}>
                           <IconButton onClick={() => handleShare(blog)}>
@@ -1055,6 +1373,117 @@ Remember, SEO is about helping both search engines and users find your content. 
       </Dialog>
 
       <LoginPromptDialog />
+
+      {/* Blog Detail Dialog */}
+      <Dialog
+        open={Boolean(selectedBlog)}
+        onClose={handleCloseBlogDetail}
+        maxWidth="md"
+        fullWidth
+        PaperProps={{
+          sx: {
+            borderRadius: 2,
+            maxHeight: '90vh',
+          }
+        }}
+      >
+        {selectedBlog && (
+          <>
+            <DialogTitle sx={{ pb: 1 }}>
+              <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <Typography variant="h5" component="div">
+                  {selectedBlog.title}
+                </Typography>
+                <IconButton onClick={handleCloseBlogDetail}>
+                  <CloseIcon />
+                </IconButton>
+              </Box>
+              <Box sx={{ display: 'flex', alignItems: 'center', mt: 1 }}>
+                <Avatar sx={{ mr: 2 }}>{selectedBlog.author[0]}</Avatar>
+                <Box>
+                  <Typography variant="subtitle1">{selectedBlog.author}</Typography>
+                  <Typography variant="caption" color="text.secondary">
+                    {selectedBlog.date} • {selectedBlog.readTime}
+                  </Typography>
+                </Box>
+              </Box>
+            </DialogTitle>
+            <DialogContent dividers>
+              <Box sx={{ mb: 3 }}>
+                <img 
+                  src={selectedBlog.image} 
+                  alt={selectedBlog.title}
+                  style={{ 
+                    width: '100%', 
+                    maxHeight: '300px', 
+                    objectFit: 'cover',
+                    borderRadius: '8px'
+                  }}
+                />
+              </Box>
+              <Box sx={{ whiteSpace: 'pre-line', fontFamily: 'inherit' }}>
+                {selectedBlog.fullContent}
+              </Box>
+              <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, mt: 3 }}>
+                {selectedBlog.tags.map((tag) => (
+                  <Chip
+                    key={tag}
+                    label={tag}
+                    size="small"
+                    sx={{
+                      backgroundColor: 'rgba(59, 130, 246, 0.06)',
+                      color: '#64748B',
+                      border: '1px solid rgba(59, 130, 246, 0.1)',
+                    }}
+                  />
+                ))}
+              </Box>
+            </DialogContent>
+            <DialogActions sx={{ px: 3, py: 2 }}>
+              <Box sx={{ display: 'flex', gap: 2 }}>
+                <Tooltip title={!user ? "Login to like" : "Like this post"}>
+                  <IconButton 
+                    onClick={() => handleLike(selectedBlog.id)}
+                    sx={{ 
+                      opacity: user ? 1 : 0.7,
+                      '&:hover': { opacity: 1 }
+                    }}
+                  >
+                    <ThumbUpIcon color={selectedBlog.likes > 0 ? 'primary' : 'action'} />
+                    <Typography variant="body2" sx={{ ml: 1 }}>
+                      {selectedBlog.likes}
+                    </Typography>
+                  </IconButton>
+                </Tooltip>
+                <Tooltip title={!user ? "Login to comment" : "Add a comment"}>
+                  <IconButton
+                    onClick={() => !user ? setLoginPromptOpen(true) : null}
+                    sx={{ 
+                      opacity: user ? 1 : 0.7,
+                      '&:hover': { opacity: 1 }
+                    }}
+                  >
+                    <CommentIcon />
+                    <Typography variant="body2" sx={{ ml: 1 }}>
+                      {selectedBlog.comments.length}
+                    </Typography>
+                  </IconButton>
+                </Tooltip>
+              </Box>
+              <Box sx={{ display: 'flex', gap: 1 }}>
+                <IconButton onClick={() => handleShare(selectedBlog)}>
+                  <ShareIcon />
+                </IconButton>
+                {user && (
+                  <IconButton>
+                    <BookmarkIcon />
+                  </IconButton>
+                )}
+              </Box>
+            </DialogActions>
+          </>
+        )}
+      </Dialog>
     </Box>
   );
 };

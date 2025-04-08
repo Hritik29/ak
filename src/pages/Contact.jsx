@@ -51,11 +51,11 @@ const Contact = () => {
 
   return (
     <Container sx={{ py: 8 }}>
-      <Typography variant="h3" component="h1" gutterBottom align="center">
-        Contact Me
+      <Typography variant="h3" component="h1" gutterBottom align="center" paddingTop={3}>
+        Let's Work Together
       </Typography>
       <Typography variant="subtitle1" color="text.secondary" align="center" paragraph>
-        Let's work together on your next project
+        Ready to elevate your content? Let's discuss your project.
       </Typography>
 
       <Grid container spacing={4} sx={{ mt: 2 }}>
@@ -72,20 +72,20 @@ const Contact = () => {
               <Box sx={{ mt: 3 }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
                   <EmailIcon sx={{ mr: 2, color: theme.palette.primary.main }} />
-                  <Typography>your.email@example.com</Typography>
+                  <Typography>raiakanksha392@gmail.com</Typography>
                 </Box>
                 <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
                   <PhoneIcon sx={{ mr: 2, color: theme.palette.primary.main }} />
-                  <Typography>+1 (555) 123-4567</Typography>
+                  <Typography>+91 9039616805</Typography>
                 </Box>
                 <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
                   <LocationOnIcon sx={{ mr: 2, color: theme.palette.primary.main }} />
-                  <Typography>Your City, Country</Typography>
+                  <Typography>New Delhi, India</Typography>
                 </Box>
               </Box>
               <Box sx={{ mt: 4 }}>
                 <Typography variant="h6" gutterBottom>
-                  Follow Me
+                  Connect With Me
                 </Typography>
                 <Box sx={{ display: 'flex', gap: 2 }}>
                   <IconButton
@@ -93,6 +93,11 @@ const Contact = () => {
                     component={motion.button}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
+                    href="https://www.linkedin.com/in/akanksharai392/"
+                    target="https://www.linkedin.com/in/akanksharai392/"
+                    onClick={() => {
+                      window.open('https://www.linkedin.com/in/akanksharai392/', '_blank');
+                    }}
                   >
                     <LinkedInIcon />
                   </IconButton>
@@ -101,6 +106,11 @@ const Contact = () => {
                     component={motion.button}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
+                    href="https://twitter.com/akanksha_rai"
+                    target="_blank"
+                    onClick={() => {
+                      window.open('https://x.com/AkankshaRa92129', '_blank');
+                    }}
                   >
                     <TwitterIcon />
                   </IconButton>
@@ -109,6 +119,11 @@ const Contact = () => {
                     component={motion.button}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
+                    href="https://www.instagram.com/_ek__aayra_10/"
+                    target="https://www.instagram.com/_ek__aayra_10/"
+                    onClick={() => {  
+                      window.open('https://www.instagram.com/_ek__aayra_10/', '_blank');
+                    }}
                   >
                     <InstagramIcon />
                   </IconButton>
